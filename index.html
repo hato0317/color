@@ -1,0 +1,554 @@
+@mixin color-card {
+    height: 30px;
+    animation-duration: 3s;
+    animation-name: color-animation;
+    animation-fill-mode: forwards;
+  }
+  @keyframes color-animation {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
+  } /* 色のアニメーション */
+  @media screen and (max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .box{
+        width: 80% !important;
+    }
+    #children-button,#female-button,#adult-button{
+        display: none;
+    }
+    .iro{
+        float: none !important;;
+        margin-left:20px!important;
+    }
+    h2{
+        width: 100% !important;
+    }
+    body{
+        margin-left: 0 !important;
+    }
+    .box{
+        width: 100%!important;
+    }
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    a{
+        color:white;
+        padding-left: 30px;
+        line-height: 50px;
+        text-decoration: none;
+    }
+    #pattern{
+      display: flex;
+    }
+}
+#children-button,#female-button,#adult-button,#labo-button,#colors{
+    transition: .3s;
+}
+#children-button:hover,#female-button:hover,#adult-button:hover,#labo-button:hover,#colors:hover{
+    transform: rotate(5deg);
+}
+#children,#female,#adult,#labo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+h2{
+    margin-left: 20px;
+    margin-block-end: 0;
+    border-bottom: solid 3px skyblue;
+    position: relative;
+    width: 12%;
+}
+h2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #ffc778;
+    bottom: -3px;
+    width: 29%;
+  }
+#labo{
+    h3{
+        border-bottom: 1px solid;
+    }
+}
+.box{
+    padding: 20px;
+    width: 40%;
+    p{
+    padding:5px 0 0 5px ;
+    }
+}
+.sunshine-1{
+    @include color-card;
+    background: #ffdc00;
+}
+.sunshine-2{
+    @include color-card;
+    background: #008554;
+}
+.emerald-1{
+    @include color-card;
+    background: #00b5de;
+}
+.emerald-2{
+    @include color-card;
+    background: #f8b516;
+}
+.turquoise-1{
+    @include color-card;
+    background: #0db8d9;
+}
+.turquoise-2{
+    @include color-card;
+    background: #ffe600;
+}
+.goldenBrown-1{
+    @include color-card;
+    background: #d38120;
+}
+.goldenBrown-2{
+    @include color-card;
+    background: #fdd133;
+}
+.lapisLazuli-1{
+    @include color-card;
+    background:#261f87;
+}
+.lapisLazuli-2{
+    @include color-card;
+    background: #51a5dc;
+}
+.lapisLazuli-3{
+    @include color-card;
+    background:#ffdc00;
+}
+.summerGreen-1{
+    @include color-card;
+    background:#008442 ;
+}
+.summerGreen-2{
+    @include color-card;
+    background: #f08a37;
+}
+.summerGreen-3{
+    @include color-card;
+    background: #f8b800;
+}
+.cherry-1{
+    @include color-card;
+    background: #f7c8da;
+}
+.cherry-2{
+    @include color-card;
+    background: #fbe5eb;
+}
+.redBeans-1{
+    @include color-card;
+    background: #864544;
+}
+.redBeans-2{
+    @include color-card;
+    background: #f5b8b5;
+}
+.frenchBlue-1{
+    @include color-card;
+    background: #0086c0;
+}
+.frenchBlue-2{
+    @include color-card;
+    background: #fdf0f1;
+}
+.palepink-1{
+    @include color-card;
+    background: #fbe5e7;
+}
+.palepink-2{
+    @include color-card;
+    background: #fffabb;
+}
+.shinyPink-1{
+    @include color-card;
+    background: #f7c6bd;
+}
+.shinyPink-2{
+    @include color-card;
+    background: #9fd8ee;
+}
+.shinyPink-3{
+    @include color-card;
+    background: #eaf6fd;
+}
+.reflectionBlue-1{
+    @include color-card;
+    background:#9fd8ee ;
+}
+.reflectionBlue-2{
+    @include color-card;
+    background:#e2eba3 ;
+}
+.reflectionBlue-3{
+    @include color-card;
+    background: #f7c6bd;
+}
+.calmBrown-1{
+    @include color-card;
+    background: #c6b3a3;
+}
+.calmBrown-2{
+    @include color-card;
+    background: #e5e2da;
+}
+.powderSnow-1{
+    @include color-card;
+    background: #eaf2fa;
+}
+.powderSnow-2{
+    @include color-card;
+    background: #c1d2e9;
+}
+.koke-1{
+    @include color-card;
+    background:#6e9452;
+}
+.koke-2{
+    @include color-card;
+    background:#f0ced3;
+}
+.blueBlack-1{
+    @include color-card;
+    background:#434e48;
+}
+.blueBlack-2{
+    @include color-card;
+    background:#f4ecd0;
+}
+.inkBlue-1{
+    @include color-card;
+    background:#00426d;
+}
+.inkBlue-2{
+    @include color-card;
+    background:#b69b63;
+}
+.inkBlue-3{
+    @include color-card;
+    background:#ac291d;
+}
+.deepYellow-1{
+    @include color-card;
+    background:#d5a945;
+}
+.deepYellow-2{
+    @include color-card;
+    background:#324658;
+}
+.deepYellow-3{
+    @include color-card;
+    background:#4c6f9e;
+}
+.second-1{
+    @include color-card;
+    background: #00a6b5;
+}
+.second-2{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.second-3{
+    @include color-card;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #00a6b5 50%, #00a6b5 100%);
+    border:1px solid #ebede8;
+}
+.second-4{
+    @include color-card;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #940000 50%, #940000 100%);
+    border:1px solid #ebede8;
+}
+.second-5{
+    @include color-card;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #940000 50%, #940000 100%);
+    border:1px solid #ebede8;
+}
+.second-6{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.second-7{
+    @include color-card;
+    background: linear-gradient(90deg, #d998c1 0%, #d998c1 50%, #8a0094 50%, #8a0094 100%);
+}
+.second-8{
+    @include color-card;
+    background:linear-gradient(90deg, #000000 0%, #000000 50%, #8a0094 50%, #8a0094 100%);
+}
+.second-9{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.second-10{
+    @include color-card;
+    background:linear-gradient(90deg, #1b00c9 0%, #1b00c9 50%, #f200e6 50%, #f200e6 100%);
+}
+.second-11{
+    @include color-card;
+    background: #3d3d3b;
+}
+.second-12{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.third-1{
+    @include color-card;
+    background:linear-gradient(90deg, #f6a6ff 0%, #f6a6ff 50%, #00cc0e 50%, #00cc0e 100%);
+}
+.third-2{
+    @include color-card;
+    background:#00cc0e;
+}
+.third-3{
+    @include color-card;
+    background:#f9ff54;
+}
+.third-4{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffb5 0%,#ffffb5 50%,#242419 50%,#242419 100%);
+}
+.third-5{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.third-6{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.third-7{
+    @include color-card;
+    background: linear-gradient(90deg,#0000ff 0%,#0000ff 50%,#ffb114 50%,#ffb114 100%);
+}
+.third-8{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#ffb114 50%,#ffb114 100%);
+    border:1px solid #ebede8;
+}
+.third-9{
+    @include color-card;
+    background:#ffffff;
+    border:1px solid #ebede8;
+}
+.third-10{
+    @include color-card;
+    background: linear-gradient(90deg,#f8ff24 0%,#f8ff24 50%,#ff00ff 50%,#ff00ff 100%);
+}
+.third-11{
+    @include color-card;
+    background: linear-gradient(90deg,#000000 0%,#000000 50%,#ff00ff 50%,#ff00ff 100%);
+}
+.third-12{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#f8ff24 50%,#f8ff24 100%);
+    border:1px solid #ebede8;
+}
+.four-1{
+    @include color-card;
+    background: linear-gradient(90deg,#84e3e0 0%,#84e3e0 50%,#ff00ff 50%,#ff00ff 100%);
+}
+.four-2{
+    @include color-card;
+    background: #000000;
+}
+.four-3{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#84e3e0 50%,#84e3e0 100%);
+    border:1px solid #ebede8;
+}
+.four-4{
+    @include color-card;
+    background: linear-gradient(90deg,#000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
+    border:1px solid #ebede8;
+}
+.four-5{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.four-6{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.four-7{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#254c78 50%,#254c78 100%);
+    border:1px solid #ebede8;
+}
+.four-8{
+    @include color-card;
+    background: #254c78;
+}
+.four-9{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.four-10{
+    @include color-card;
+    background: linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#00de0f 50%,#00de0f 100%);
+    border:1px solid #ebede8;
+}
+.four-11{
+    @include color-card;
+    background: #00de0f;
+}
+.four-12{
+    @include color-card;
+    background: #00de0f;
+}
+.fifth-1{
+    @include color-card;
+    background: #ff00ff;
+}
+.fifth-2{
+    @include color-card;
+    background: #ff00ff;
+}
+.fifth-3{
+    @include color-card;
+    background: #f8ff24;
+}
+.fifth-4{
+    @include color-card;
+    background:linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#2747a1 50%,#2747a1 100%);
+    border:1px solid #ebede8;
+}
+.fifth-5{
+    @include color-card;
+    @include color-card;
+    background:linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#2747a1 50%,#2747a1 100%);
+    border:1px solid #ebede8;
+}
+.fifth-6{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.fifth-7{
+    @include color-card;
+    @include color-card;
+    background:linear-gradient(90deg,#ffffff 0%,#ffffff 50%,#7fe1e3 50%,#7fe1e3 100%);
+    border:1px solid #ebede8;
+}
+.fifth-8{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.fifth-9{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.fifth-10{
+    @include color-card;
+    background: #003cff;
+}
+.fifth-11{
+    @include color-card;
+    background: #ffffff;
+    border:1px solid #ebede8;
+}
+.fifth-12{
+    @include color-card;
+    background: #003cff;
+}
+
+/* iro.jsのstyle*/
+.iro {
+    margin: 0 auto;
+    display: block;
+    float: right;
+    justify-content: center;
+
+    .half {
+      width: 60%;
+      padding: 32px 0;
+    }
+  }
+
+  .title {
+    font-family: sans-serif;
+    line-height: 24px;
+    display: block;
+    padding: 8px 0;
+  }
+
+  .swatch {
+    height: 32px;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+
+  #colorList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    display: flex;
+
+    .swatch {
+      border-radius: 0;
+    }
+
+    li {
+      flex: 1;
+    }
+
+    li:first-child {
+      .swatch{
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+    }
+
+    li:last-child {
+      .swatch{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+  }
+
+  #activeColor .swatch {
+    width: 120px;
+  }
+
+  .readout {
+    margin-top: 32px;
+    line-height: 180%;
+  }
+
+  #values {
+   font-family: monospace;
+    line-height: 150%;
+  }
+
+  .link {
+    margin-top: 16px;
+
+    a {
+      color: MediumSlateBlue;
+    }
+  }
