@@ -17,39 +17,6 @@
       <a href="#" id="labo-button">客室</a>
       <a href="" id="colors">配色パターン見本</a>
       </div>
-      <script>
-        $(function(){
-          $('a[href^=#]').click(function(){
-            var speed = 400;
-            var href = $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top -50;
-            $('body,html').animate({scrollTop:position},speed,'swing');
-            return false;
-          });
-        });
-        $(function(){
-          $('#labo-button').click(function(){
-            var colorGroup = $('#children,#female,#adult');
-            var colorButton = $('#children-button,#female-button,#adult-button');
-            $(colorGroup).fadeOut();
-            $('#labo').hide().fadeIn();
-            $(colorButton).fadeOut();
-            $('.colorTitle').fadeOut();
-          });
-        });
-        $(function(){
-          var colorGroup = $('#children,#female,#adult');
-          $('#colors').click(function(){
-            $('#children').hide().fadeIn();
-            $('#labo').fadeOut();
-            $(colorButton).fadeIn();
-          });
-        });
-        $(function(){
-          $('#labo').hide();
-        });
-      </script>
     </header>
     <div class="iro">
       <div class="half">
@@ -318,4 +285,5 @@ colorPicker.on(["mount", "color:setActive", "color:change"], function(){
           <p style="color:white" class="fifth-12">天井</p>
         </div>
    </div>
+   <script src="test.js"></script>
     </body>
